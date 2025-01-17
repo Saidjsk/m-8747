@@ -7,6 +7,7 @@ import { StoreProvider } from "./context/StoreContext";
 import { Navigation } from "./components/Navigation";
 import Products from "./pages/Products";
 import Index from "./pages/Index";
+import Admin from "./pages/Admin";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </BrowserRouter>
       </StoreProvider>

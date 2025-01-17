@@ -12,15 +12,18 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-bold text-primary">
-            Store
+            المتجر
           </Link>
           
           <div className="flex items-center space-x-4">
             <Link to="/products" className="text-gray-600 hover:text-primary">
-              Products
+              المنتجات
+            </Link>
+            <Link to="/admin" className="text-gray-600 hover:text-primary">
+              لوحة التحكم
             </Link>
             <Link to="/orders" className="text-gray-600 hover:text-primary">
-              Orders
+              الطلبات
             </Link>
             <Button variant="ghost" className="relative" asChild>
               <Link to="/cart">
